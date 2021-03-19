@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react';
+import Header from "./Header";
+import {Alerts} from "./alerts";
+import {CreateAlertButton} from "./CreateAlertButton";
+import {Router} from "react-router-dom";
+import {Route, Switch} from "react-router";
+import {browserHistory} from "./browserHistory";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+export const App: React.FC = () => (
+  <Router history={browserHistory}>
+      <Header/>
+      <Alerts/>
+      <div className='App-container'>
+
+          <Switch>
+              <Route path='/awesome'>{() => <div>Awesome Page</div>}</Route>
+              <Route path='/great'>{() => <div>Great Page</div>}</Route>
+              <Route path='/'>{() => <div>Welcome Page</div>}</Route>
+          </Switch>
+
+          <CreateAlertButton />
+      </div>
+  </Router>
+);
 
 export default App;
