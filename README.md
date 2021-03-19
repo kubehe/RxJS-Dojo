@@ -6,7 +6,7 @@ RxJS is a library for composing asynchronous and event-based programs by using o
 
 RxJS == Lodash for events.
 
-Combines the Observer pattern with the Iterator pattern and functional programming with collections t
+Combines the Observer pattern with the Iterator pattern and functional programming with collections.
 
 Mutable solution:
 ```javascript
