@@ -256,4 +256,6 @@ Tips:
 ### Bibliography / Useful links
 
  - https://rxjs-dev.firebaseapp.com/
- - 
+ - https://www.elialotti.com/en/roadmap/rxjs
+ - https://github.com/LeetCode-OpenSource/rxjs-hooks
+ - https://blog.logrocket.com/rxjs-with-react-hooks-for-state-management/
